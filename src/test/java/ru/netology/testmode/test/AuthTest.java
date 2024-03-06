@@ -23,14 +23,14 @@ class AuthTest {
 
     @BeforeEach
     void setup() {
-//        open("http://localhost:9999");
-//        ChromeOptions options = new ChromeOptions();
-//        options.addArguments("--start-maximized");
-//        Map<String, Object> prefs = new HashMap<String, Object>();
-//        prefs.put("credentials_enable_service", false);
-//        prefs.put("password_manager_enabled", false);
-//        options.setExperimentalOption("prefs", prefs);
-//        Configuration.browserCapabilities = options;
+        open("http://localhost:9999");
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--start-maximized");
+        Map<String, Object> prefs = new HashMap<String, Object>();
+        prefs.put("credentials_enable_service", false);
+        prefs.put("password_manager_enabled", false);
+        options.setExperimentalOption("prefs", prefs);
+        Configuration.browserCapabilities = options;
     }
 
 
